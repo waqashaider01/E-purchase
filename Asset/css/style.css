@@ -89,6 +89,10 @@ body {
   box-shadow: none !important;
 }
 
+
+/* ----------------------------------Main Section-------------------------------- */
+/* ----------------------------------Main Footer-------------------------------- */
+
 /* ----------------------------------Main Section  Start -------------------------------- */
 .homebanner{
 
@@ -419,12 +423,15 @@ input[type="file"] {
 
 
 
+
 /* ###################################Media Query############################## */
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /* Styles */
 }
 
 @media only screen and (max-width: 992px) {
+
+
 
   .homebanner{
 
@@ -433,6 +440,7 @@ input[type="file"] {
   height: auto;
 
 }
+
 
 }
 
@@ -471,3 +479,4 @@ input[type="file"] {
 .swal2-styled.swal2-confirm{
   display: none !important;
 }
+
