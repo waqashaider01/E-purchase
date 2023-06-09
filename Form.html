@@ -1,176 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Customized CSS -->
-    <link rel="stylesheet" href="./Asset/css/style.css">
+    <link rel="stylesheet" href="./Asset/css/style.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- Website Title -->
     <title>Register page</title>
 
-
     <!-- Sweet Alert Links  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light main__header">
+        <div class="container py-2">
+          <a class="navbar-brand main__logo" href="#"
+            ><img src="Asset/images/E-Purchase.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar__collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav navbar__nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav__link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="btn main__button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!-- ============ Register Form start ============= -->
     <div class="container my-5">
-        <div class="row">
-            <div class="col">
-                <h2 class="fill_form_title">Please Fill out this Form</h2>
-            </div>
+      <div class="row">
+        <div class="col">
+          <h2 class="fill_form_title">Please Fill out this Form</h2>
         </div>
+      </div>
 
-        <div class="row justify-content-center mt-3">
-            <div class="col-lg-10 px-sm-1 px-md-0">
-                <div class="form">
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-10 px-sm-1 px-md-0">
+          <div class="form">
+            <div class="row">
+              <div class="col-lg-6 my-2">
+                <label for="productname" class="form-label form_label_text"
+                  >Product Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control form_input_formating"
+                  aria-label="Product Name"
+                  id="productname"
+                />
+              </div>
 
-                    <div class="row">
+              <div class="col-lg-6 my-2">
+                <label for="model" class="form-label form_label_text"
+                  >Model</label
+                >
+                <input
+                  type="text"
+                  class="form-control form_input_formating"
+                  aria-label="Model"
+                  id="model"
+                />
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="productname" class="form-label form_label_text">Product Name</label>
-                            <input type="text" class="form-control form_input_formating" aria-label="Product Name"
-                                id="productname">
-                        </div>
+              <div class="col-lg-6 my-2">
+                <label for="colorname" class="form-label form_label_text"
+                  >Color</label
+                >
+                <input
+                  type="text"
+                  class="form-control form_input_formating"
+                  aria-label="Color"
+                  id="colorname"
+                />
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="model" class="form-label form_label_text">Model</label>
-                            <input type="text" class="form-control form_input_formating" aria-label="Model" id="model">
-                        </div>
+              <div class="col-lg-6 my-2">
+                <label for="condition" class="form-label form_label_text"
+                  >Condition</label
+                >
+                <input
+                  type="text"
+                  class="form-control form_input_formating"
+                  aria-label="Condition"
+                  id="condition"
+                />
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="colorname" class="form-label form_label_text">Color</label>
-                            <input type="text" class="form-control form_input_formating" aria-label="Color"
-                                id="colorname">
-                        </div>
+              <div class="col-lg-6 my-2">
+                <label for="serialnumber" class="form-label form_label_text"
+                  >Serial Number</label
+                >
+                <input
+                  type="number"
+                  class="form-control form_input_formating"
+                  aria-label="Serial Number"
+                  id="serialnumber"
+                />
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="condition" class="form-label form_label_text">Condition</label>
-                            <input type="text" class="form-control form_input_formating" aria-label="Condition"
-                                id="condition">
-                        </div>
+              <div class="col-lg-6 my-2">
+                <label for="memory" class="form-label form_label_text"
+                  >Memory</label
+                >
+                <input
+                  type="text"
+                  class="form-control form_input_formating"
+                  aria-label="Memory"
+                  id="memory"
+                />
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="serialnumber" class="form-label form_label_text">Serial Number</label>
-                            <input type="number" class="form-control form_input_formating" aria-label="Serial Number"
-                                id="serialnumber">
-                        </div>
+              <div class="col-lg-12 my-2">
+                <label for="memory" class="form-label form_label_text"
+                  >Product Description ( Explain the product in your words
+                  )</label
+                >
+                <textarea
+                  class="form-control form_textarea_formating"
+                  id="floatingTextarea2"
+                ></textarea>
+              </div>
 
-                        <div class="col-lg-6 my-2">
-                            <label for="memory" class="form-label form_label_text">Memory</label>
-                            <input type="text" class="form-control form_input_formating" aria-label="Memory"
-                                id="memory">
-                        </div>
+              <div class="my-3">
+                <button
+                  type="button"
+                  class="btn uploadedImg btn-lg btncolor-change"
+                >
+                  Upload Pictures
+                </button>
+              </div>
 
-                        <div class="col-lg-12 my-2">
-                            <label for="memory" class="form-label form_label_text">Product Description ( Explain the
-                                product in your words )</label>
-                            <textarea class="form-control form_textarea_formating" id="floatingTextarea2"></textarea>
-                        </div>
-
-                        <div class="  my-3">
-                        
-                            <button type="button"   class="btn  uploadedImg btn-lg btncolor-change ">Upload Pictures</button>
-                        </div>
-
-                      
-
-                        <div class="col-lg-12 mt-3 d-flex">
-
-
-
-                    
-
-
-                            <div class="upload d-flex mx-2">
-
-                            </div>
-
-                           
-                        </div>
-                        <!-- ============ Image Area Portion End =========== -->
-
-
-
-                    </div>
-
-                    <!-- -- Submit Button start--- -->
-
-                    <div class="text-center my-3">
-
-                        <button type="button" id="showAlertButton" class="btn  btn-lg btncolor-change ">Submit</button>
-                    </div>
-                    <!-- -- Submit Button end--- -->
-                </div>
+              <div class="col-lg-12 mt-3 d-flex">
+                <div class="upload d-flex mx-2"></div>
+              </div>
+              <!-- ============ Image Area Portion End =========== -->
             </div>
-        </div>
 
+            <!-- -- Submit Button start--- -->
+
+            <div class="text-center my-3">
+              <button
+                type="button"
+                id="showAlertButton"
+                class="btn btn-lg btncolor-change"
+              >
+                Submit
+              </button>
+            </div>
+            <!-- -- Submit Button end--- -->
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
     <script>
-        document.getElementById('showAlertButton').addEventListener('click', function () {
-            Swal.fire({
-               
-                   title: 'Your Product has been submitted Successfully <br> <br><br> <br>  Please Be Patient',
-                 
-                text: 'Once your product is Approved you will be directed to chat with our sales person',
-            
-                 
-            });
+      document
+        .getElementById("showAlertButton")
+        .addEventListener("click", function () {
+          Swal.fire({
+            title:
+              "Your Product has been submitted Successfully <br> <br><br> <br>  Please Be Patient",
+
+            text: "Once your product is Approved you will be directed to chat with our sales person",
+          });
         });
 
+      // image upload script
 
-        // image upload script 
+      // image upload
+      const uploadDiv = document.querySelector(".uploadedImg");
+      const uploadedImgContainer = document.querySelector(".upload");
 
-        // image upload
-            const uploadDiv = document.querySelector(".uploadedImg");
-            const uploadedImgContainer = document.querySelector(".upload");
+      uploadDiv.addEventListener("click", () => {
+        // Trigger the click event on the file input element
+        const fileInput = document.createElement("input");
+        fileInput.type = "file";
+        fileInput.click();
 
-            uploadDiv.addEventListener("click", () => {
-                // Trigger the click event on the file input element
-                const fileInput = document.createElement("input");
-                fileInput.type = "file";
-                fileInput.click();
-
-                // Handle the selected file
-                fileInput.addEventListener("change", (event) => {
-                    const selectedFile = event.target.files[0];
-                    // Create an <img> element
-                    const imgElement = document.createElement("img");
-                    imgElement.src = URL.createObjectURL(selectedFile);
-                    imgElement.alt = "Uploaded Image";
-                    // Set the height and width of the image
-                    imgElement.style.height = "150px";
-                    imgElement.style.width = "150px";
-                    imgElement.style.margin = "10px"
-                    // Append the <img> element to the container
-                    uploadedImgContainer.appendChild(imgElement);
-                });
-            });
+        // Handle the selected file
+        fileInput.addEventListener("change", (event) => {
+          const selectedFile = event.target.files[0];
+          // Create an <img> element
+          const imgElement = document.createElement("img");
+          imgElement.src = URL.createObjectURL(selectedFile);
+          imgElement.alt = "Uploaded Image";
+          // Set the height and width of the image
+          imgElement.style.height = "150px";
+          imgElement.style.width = "150px";
+          imgElement.style.margin = "10px";
+          // Append the <img> element to the container
+          uploadedImgContainer.appendChild(imgElement);
+        });
+      });
     </script>
     <!-- ============ Register Form End ============= -->
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- ==== codepan link for multiple files upload === -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
     <!-- === js Files ==== -->
     <script src="./Asset/js/register_form.js"></script>
-</body>
-
+  </body>
 </html>
-
-
-
