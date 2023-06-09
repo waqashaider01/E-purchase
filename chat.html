@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.max.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="Asset/css/style.css" />
+
+    <!-- Website Title -->
+    <title>E-Purchase</title>
+    <style>
+      .notification {
+        background: #fff5f5;
+        border-radius: 20px;
+        width: 469px;
+        height: 264px;
+      }
+      .f1 {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 139.02%;
+
+        /* or 33px */
+        text-align: center;
+
+        color: #000000;
+      }
+
+      .f2 {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 139.02%;
+        /* or 22px */
+
+        text-align: center;
+
+        color: #000000;
+      }
+      .chatBox {
+        background: #fff5f5;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .f3 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 139.02%;
+        /* or 33px */
+
+        color: #000000;
+      }
+      .reciveMessage {
+        background: #5cb1ff;
+        border-radius: 10px 10px 0px 10px;
+        max-width: 240px;
+        max-height: 86px;
+      }
+      .sentMessage {
+        background: #fff;
+        border-radius: 10px 10px 10px 0px;
+        max-width: 240px;
+        max-height: 86px;
+      }
+      .f3 {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 139.02%;
+        /* or 21px */
+
+        color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ----------------------------------Main Header-------------------------------- -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light main__header">
+        <div class="container py-2">
+          <a class="navbar-brand main__logo" href="#"
+            ><img src="Asset/images/E-Purchase.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar__collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav navbar__nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav__link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="btn main__button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-7">
+          <div
+            class="notification d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="f1">Your Product has been Approved</p>
+            <p class="f2 mt-5">
+              You can now chat with our sales person to <br />
+              find a better deal
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="chatBox px-3">
+            <div class="chatHeader px-2 py-2 d-flex justify-content-between">
+              <div></div>
+              <p class="f3">Alex Stare</p>
+              <div class="dropdown">
+                <button
+                  class="btn"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    width="22"
+                    height="11"
+                    viewBox="0 0 22 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 1L12.7677 9.2677C11.7955 10.2441 10.2045 10.2441 9.23232 9.2677L1 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                  <li><a class="dropdown-item" href="#">Option 3</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <hr />
+            <div class="chatMessage">
+              <div class="recieveBox d-flex justify-content-end my-3">
+                <div class="reciveMessage">
+                  <p class="f3 w-fit p-3">
+                    Hi, Saw Your Product its very good. what is your expected
+                    price?
+                  </p>
+                </div>
+              </div>
+              <div class="sentBox d-flex justify-content-start my-3">
+                <div class="sentMessage">
+                  <p class="f3 w-fit p-3">
+                    Hi, Saw Your Product its very good. what is your expected
+                    price?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p></p>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.max.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
