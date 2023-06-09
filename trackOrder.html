@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="Asset/css/style.css" />
+    <link rel="stylesheet" href="Asset/css/style2.css" />
+    <!-- Website Title -->
+    <title>E-Purchase</title>
+    <style>
+      .ft1 {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 139.02%;
+        /* or 33px */
+
+        color: #000000;
+      }
+      .tripBox {
+        background: #fff5f5;
+        border-radius: 10px;
+      }
+      /* .route {
+        position: relative;
+      }
+      .rImg {
+        position: absolute;
+        top: 4px;
+        left: 20px;
+      } */
+      .rImg {
+        margin-left: -10px !important;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ----------------------------------Main Header-------------------------------- -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light main__header">
+        <div class="container py-2">
+          <a class="navbar-brand main__logo" href="#"
+            ><img src="Asset/images/E-Purchase.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar__collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav navbar__nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav__link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="btn main__button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container pt-5">
+      <!-- order Status -->
+      <div class="row my-3">
+        <p class="ft1">Track Order</p>
+        <div class="col-md-6 my-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387082.6364932207!2d-74.25986572262856!3d40.69767033801009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f7a0df9463%3A0xae8ee17644a26784!2sNew%20York%2C%20USA!5e0!3m2!1sen!2suk!4v1623246580623!5m2!1sen!2suk"
+            height="700px"
+            width="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-md-6 my-3">
+          <div class="d-flex">
+            <div class="d-flex flex-column">
+              <img src="./Asset/images/tick.png" alt="" />
+              <p class="fw-bold">Deal</p>
+            </div>
+            <div class="d-flex pt-4">
+              <img src="./Asset/images/line.png" height="8px" width="50px" />
+            </div>
+            <div class="d-flex flex-column">
+              <img src="./Asset/images/tick.png" alt="" />
+              <p class="fw-bold">Location</p>
+            </div>
+            <div class="d-flex pt-4">
+              <img src="./Asset/images/line.png" height="8px" width="50px" />
+            </div>
+            <div class="d-flex flex-column">
+              <img src="./Asset/images/tick.png" width="60px" alt="" />
+              <p class="fw-bold">on the way</p>
+            </div>
+            <div class="d-flex flex-column ms-5">
+              <img src="./Asset/images/emptyc.png" alt="" />
+              <p class="fw-bold">Pick Up</p>
+            </div>
+          </div>
+
+          <!-- trip route -->
+          <div class="row mt-5 pt-5">
+            <div class="col-md-12 mt-5 pt-5">
+              <div class="tripBox mt-5 p-3">
+                
+                <p class="fw-bold text-center">Trip Route</p>
+                <div class="row">
+                    <div class="col-md-4"> <p class="">682 N. Lower River St.Roanoke, VA 24012</p></div>
+                    <div class="col-md-4">
+                        <img
+                        src="./Asset/images/routeLine.png"
+                        height="10px"
+                        alt=""
+                        class="rImg"
+                      />
+                    </div>
+                    <div class="col-md-4">
+                        <p>550 Glenlake Dr.Clearwater, FL 33756</p>
+                    </div>
+                </div>
+                
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- order status end -->
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.max.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
