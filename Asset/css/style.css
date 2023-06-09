@@ -89,14 +89,260 @@ body {
   box-shadow: none !important;
 }
 
-/* ----------------------------------Main Section-------------------------------- */
+/* ----------------------------------Main Section  Start -------------------------------- */
+.homebanner{
+
+
+  width: 100%;
+  height: 95vh;
+
+  background-color:var(--color-2);
+
+}
+.main-content h3{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 54px;
+ 
+ 
+
+letter-spacing: 0.035em;
+
+color: #000000;
+}
+
+.main-content p{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+ 
+text-align: justify;
+
+color: rgba(0, 0, 0, 0.7);
+
+}
+.main-content button{
+ font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+ background: var(--color-6);
+color: #FFFFFF;
+}
+
+.homebanner-img img{
+  width: 100%;
+}
+
+
+
+/*############> About Section Start <######*/
+.aboutmain{
+  text-align: center;
+}
+.aboutmain h3{
+  
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 145.52%;
+/* or 58px */
+
+
+color: #000000;
+
+}
+
+.aboutmain p{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 202.52%;
+/* or 32px */
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+/* Work Section Start  */
+.worksection{
+    width: 100%;
+ 
+
+  background-color:var(--color-2);
+
+}
+ 
+
+.work-card{
+  text-align: center;
+
+}
+.work-card img{
+  width: 80px;
+}
+
+.work-card  h3{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+color: #000000;
+}
+.work-card p{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+ 
+
+text-align: center;
+
+color: rgba(0, 0, 0, 0.7);
+}
+
+ 
+.getintouch h4{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+ 
+
+color: #000000;
+}
+.getintouch h5{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+ 
+
+color: #000000;
+}
+
+.getintouchform input{
+  width:100%;
+padding: 15px;
+border: none ;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+}
+
+.getintouchform textarea{
+  width:100%;
+padding: 15px;
+border: none ;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+}
+
+
+.getintouchform textarea::placeholder{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+color: rgba(0, 0, 0, 0.4);
+
+
+}
+
+.getintouchform input::placeholder{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+color: rgba(0, 0, 0, 0.4);
+
+}
+/* ----------------------------------Main Section End -------------------------------- */
+
 /* ----------------------------------Main Footer-------------------------------- */
+.footer-logo img{
+  width: 100px;
+
+}
+.footerlinks a{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+ 
+
+color: #000000;
+
+}
+
+
+
+
+/* ##############>Login Start  <##############*/
+.loginmain{
+background: #FFF5F5;
+box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.07);
+border-radius: 15px;
+}
+
+
+.logincontet h3{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+ 
+
+color: #000000;
+
+}
+
+.logincontet p{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+
+
+
+
 /* ###################################Media Query############################## */
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   /* Styles */
 }
 
 @media only screen and (max-width: 992px) {
+
+  .homebanner{
+
+
+  width: 100%;
+  height: auto;
+
+}
+
 }
 
 @media only screen and (max-width: 767px) {
