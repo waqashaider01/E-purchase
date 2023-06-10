@@ -17,85 +17,59 @@
     <link rel="stylesheet" href="Asset/css/style2.css" />
     <!-- Website Title -->
     <title>E-Purchase</title>
-    <style>
-      .ft1 {
-        font-family: "Outfit";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 139.02%;
-        /* or 33px */
-
-        color: #000000;
-      }
-      .tripBox {
-        background: #fff5f5;
-        border-radius: 10px;
-      }
-      /* .route {
-        position: relative;
-      }
-      .rImg {
-        position: absolute;
-        top: 4px;
-        left: 20px;
-      } */
-      .rImg {
-        margin-left: -10px !important;
-        margin-top: 4px;
-      }
-    </style>
+   
   </head>
 
   <body>
     <!-- ----------------------------------Main Header-------------------------------- -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light main__header">
-        <div class="container py-2">
-          <a class="navbar-brand main__logo" href="#"
-            ><img src="Asset/images/E-Purchase.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse navbar__collapse"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav navbar__nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link nav__link active"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__link" href="#">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__link" href="#">Contact</a>
-              </li>
-            </ul>
-            <div>
-              <button class="btn main__button">Submit</button>
+        <nav class="navbar navbar-expand-lg navbar-light main__header">
+          <div class="container py-2">
+            <a class="navbar-brand main__logo" href="#"
+              ><img src="Asset/images/E-Purchase.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse navbar__collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav navbar__nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav__link active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="#">How it works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="#">Contact</a>
+                </li>
+              </ul>
+              <div>
+                <button class="btn main__button">Submit</button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+  
 
     <!-- Main Container -->
     <div class="container pt-5">
@@ -118,31 +92,35 @@
         <div class="col-md-6 my-3">
           <div class="d-flex">
             <div class="d-flex flex-column">
-              <img src="./Asset/images/tick.png" alt="" />
-              <p class="fw-bold">Deal</p>
+              <img src="./Asset/images/tick.png"  class="tImg" alt="" />
+              <p class="fw-bold fSize">Deal</p>
             </div>
             <div class="d-flex pt-4">
-              <img src="./Asset/images/line.png" height="8px" width="50px" />
+              <img src="./Asset/images/line.png" class="lImg" height="8px"  />
             </div>
+            <!-- <div class="d-flex flex-column">
+                <img src="./Asset/images/tick.png"  class="tImg" alt="" />
+              <p class="fw-bold fSize">Location</p>
+            </div> -->
             <div class="d-flex flex-column">
-              <img src="./Asset/images/tick.png" alt="" />
-              <p class="fw-bold">Location</p>
-            </div>
+                <img src="./Asset/images/tick.png"  class="tImg" alt="" />
+                <p class="fw-bold fSize">Location</p>
+              </div>
             <div class="d-flex pt-4">
-              <img src="./Asset/images/line.png" height="8px" width="50px" />
+              <img src="./Asset/images/line.png" class="lImg" height="8px"  />
             </div>
             <div class="d-flex flex-column">
-              <img src="./Asset/images/tick.png" width="60px" alt="" />
-              <p class="fw-bold">on the way</p>
+              <img src="./Asset/images/tick.png"  class="tImg"  alt="" />
+              <p class="fw-bold fSize">on the way</p>
             </div>
-            <div class="d-flex flex-column ms-5">
-              <img src="./Asset/images/emptyc.png" alt="" />
-              <p class="fw-bold">Pick Up</p>
+            <div class="d-flex flex-column ms-0 ms-md-5">
+              <img src="./Asset/images/emptyc.png" class="tImg" />
+              <p class="fw-bold fSize">Pick Up</p>
             </div>
           </div>
 
           <!-- trip route -->
-          <div class="row mt-5 pt-5">
+          <div class="row mt-5 mb-3 pt-5">
             <div class="col-md-12 mt-5 pt-5">
               <div class="tripBox mt-5 p-3">
                 
@@ -161,22 +139,66 @@
                         <p>550 Glenlake Dr.Clearwater, FL 33756</p>
                     </div>
                 </div>
-                
+                  <div class="d-flex justify-content-between">
+                    <div class="profile d-flex ">
+                        <img src="./Asset/images/pngwing 4.png" class="pImage" alt="">
+                        <div class="pt-2">
+                            <p>Luqman sardar</p>
+                            <div class="stars">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.49819 1.03367C6.946 -0.344558 8.89583 -0.344557 9.34365 1.03367L10.188 3.63226C10.3882 4.24862 10.9626 4.66593 11.6107 4.66593H14.343C15.7922 4.66593 16.3947 6.52033 15.2223 7.37212L13.0118 8.97814C12.4875 9.35907 12.2681 10.0343 12.4684 10.6507L13.3127 13.2492C13.7605 14.6275 12.1831 15.7736 11.0107 14.9218L8.80021 13.3157C8.2759 12.9348 7.56593 12.9348 7.04162 13.3157L4.83113 14.9218C3.65874 15.7736 2.0813 14.6275 2.52911 13.2492L3.37344 10.6507C3.57371 10.0343 3.35432 9.35907 2.83001 8.97814L0.619518 7.37212C-0.552875 6.52033 0.0496563 4.66593 1.49881 4.66593H4.23113C4.87921 4.66593 5.45359 4.24862 5.65386 3.63226L6.49819 1.03367Z" fill="#FFDB6C"/>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.49819 1.03367C6.946 -0.344558 8.89583 -0.344557 9.34365 1.03367L10.188 3.63226C10.3882 4.24862 10.9626 4.66593 11.6107 4.66593H14.343C15.7922 4.66593 16.3947 6.52033 15.2223 7.37212L13.0118 8.97814C12.4875 9.35907 12.2681 10.0343 12.4684 10.6507L13.3127 13.2492C13.7605 14.6275 12.1831 15.7736 11.0107 14.9218L8.80021 13.3157C8.2759 12.9348 7.56593 12.9348 7.04162 13.3157L4.83113 14.9218C3.65874 15.7736 2.0813 14.6275 2.52911 13.2492L3.37344 10.6507C3.57371 10.0343 3.35432 9.35907 2.83001 8.97814L0.619518 7.37212C-0.552875 6.52033 0.0496563 4.66593 1.49881 4.66593H4.23113C4.87921 4.66593 5.45359 4.24862 5.65386 3.63226L6.49819 1.03367Z" fill="#FFDB6C"/>
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.49819 1.03367C6.946 -0.344558 8.89583 -0.344557 9.34365 1.03367L10.188 3.63226C10.3882 4.24862 10.9626 4.66593 11.6107 4.66593H14.343C15.7922 4.66593 16.3947 6.52033 15.2223 7.37212L13.0118 8.97814C12.4875 9.35907 12.2681 10.0343 12.4684 10.6507L13.3127 13.2492C13.7605 14.6275 12.1831 15.7736 11.0107 14.9218L8.80021 13.3157C8.2759 12.9348 7.56593 12.9348 7.04162 13.3157L4.83113 14.9218C3.65874 15.7736 2.0813 14.6275 2.52911 13.2492L3.37344 10.6507C3.57371 10.0343 3.35432 9.35907 2.83001 8.97814L0.619518 7.37212C-0.552875 6.52033 0.0496563 4.66593 1.49881 4.66593H4.23113C4.87921 4.66593 5.45359 4.24862 5.65386 3.63226L6.49819 1.03367Z" fill="#FFDB6C"/>
+                                            </svg>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.49819 1.03367C6.946 -0.344558 8.89583 -0.344557 9.34365 1.03367L10.188 3.63226C10.3882 4.24862 10.9626 4.66593 11.6107 4.66593H14.343C15.7922 4.66593 16.3947 6.52033 15.2223 7.37212L13.0118 8.97814C12.4875 9.35907 12.2681 10.0343 12.4684 10.6507L13.3127 13.2492C13.7605 14.6275 12.1831 15.7736 11.0107 14.9218L8.80021 13.3157C8.2759 12.9348 7.56593 12.9348 7.04162 13.3157L4.83113 14.9218C3.65874 15.7736 2.0813 14.6275 2.52911 13.2492L3.37344 10.6507C3.57371 10.0343 3.35432 9.35907 2.83001 8.97814L0.619518 7.37212C-0.552875 6.52033 0.0496563 4.66593 1.49881 4.66593H4.23113C4.87921 4.66593 5.45359 4.24862 5.65386 3.63226L6.49819 1.03367Z" fill="#FFDB6C"/>
+                                                </svg>
+                                                <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="mask0_23_99" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="19">
+                                                    <path d="M7.39739 18.9513L13.5 16L14 7.67957V0L7.39739 1.41747L0.0332031 7.67957L7.39739 18.9513Z" fill="#FFDB6C"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_23_99)">
+                                                    <path d="M10.2712 2.03367C10.719 0.655442 12.6687 0.655443 13.1165 2.03367L13.9608 4.63226C14.161 5.24862 14.7354 5.66593 15.3834 5.66593H18.1155C19.5646 5.66593 20.1671 7.52033 18.9948 8.37212L16.7844 9.97814C16.2601 10.3591 16.0408 11.0343 16.241 11.6507L17.0853 14.2492C17.5331 15.6275 15.9557 16.7736 14.7834 15.9218L12.5731 14.3157C12.0488 13.9348 11.3389 13.9348 10.8146 14.3157L8.60426 15.9218C7.43194 16.7736 5.8546 15.6275 6.30238 14.2492L7.14666 11.6507C7.34692 11.0343 7.12754 10.3591 6.60326 9.97814L4.39292 8.37212C3.2206 7.52033 3.82309 5.66593 5.27216 5.66593H8.00429C8.65233 5.66593 9.22667 5.24862 9.42693 4.63226L10.2712 2.03367Z" fill="#FFDB6C"/>
+                                                    </g>
+                                                    </svg>
+                                                  <small>4.9</small>  
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <button class="btn"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 9.26163C1.5 6.54003 2.17989 4.63658 3.40824 3.40824C4.63658 2.17989 6.54003 1.5 9.26163 1.5H20.6105C23.3321 1.5 25.2355 2.17989 26.4639 3.40824C27.6922 4.63658 28.3721 6.54003 28.3721 9.26163V16.3547C28.3721 19.0763 27.6922 20.9797 26.4639 22.208C25.2355 23.4364 23.3321 24.1163 20.6105 24.1163H19.9012C19.2235 24.1163 18.5784 24.4415 18.1692 24.9799L18.1663 24.9837L16.0384 27.8209C15.6911 28.284 15.2844 28.4572 14.936 28.4572C14.5877 28.4572 14.181 28.284 13.8337 27.8209L11.7085 24.9873C11.502 24.7058 11.2048 24.4972 10.93 24.361C10.6524 24.2234 10.3103 24.1163 9.97093 24.1163H9.26163C6.43768 24.1163 4.56538 23.7503 3.37179 22.7059C2.20297 21.6832 1.5 19.8365 1.5 16.3547V9.26163ZM9.26163 0C6.30881 0 3.95644 0.738712 2.34758 2.34758C0.738712 3.95644 0 6.30881 0 9.26163V16.3547C0 19.9658 0.715635 22.3749 2.38403 23.8348C4.02765 25.2729 6.41116 25.6163 9.26163 25.6163H9.97093C10.0146 25.6163 10.1265 25.6369 10.2638 25.7049C10.4022 25.7736 10.479 25.847 10.4993 25.8748L10.4992 25.8749L10.5058 25.8837L12.6337 28.7209C13.2227 29.5062 14.0502 29.9572 14.936 29.9572C15.8219 29.9572 16.6494 29.5062 17.2384 28.7209L19.3634 25.8875L19.3646 25.8859C19.4946 25.716 19.7 25.6163 19.9012 25.6163H20.6105C23.5633 25.6163 25.9157 24.8776 27.5245 23.2687C29.1334 21.6598 29.8721 19.3075 29.8721 16.3547V9.26163C29.8721 6.30881 29.1334 3.95644 27.5245 2.34758C25.9157 0.738712 23.5633 0 20.6105 0H9.26163ZM7.84302 8.51163C7.42881 8.51163 7.09302 8.84741 7.09302 9.26163C7.09302 9.67584 7.42881 10.0116 7.84302 10.0116H22.0291C22.4433 10.0116 22.7791 9.67584 22.7791 9.26163C22.7791 8.84741 22.4433 8.51163 22.0291 8.51163H7.84302ZM7.84302 15.6047C7.42881 15.6047 7.09302 15.9404 7.09302 16.3547C7.09302 16.7689 7.42881 17.1047 7.84302 17.1047H16.3547C16.7689 17.1047 17.1047 16.7689 17.1047 16.3547C17.1047 15.9404 16.7689 15.6047 16.3547 15.6047H7.84302Z" fill="#407BFF"/>
+                            </svg>
+                            </button>
+                    </div>
+                  </div>
                 
                 </div>
               </div>
+            </div>
+            <!-- message -->
+            <div class="my-5 d-flex justify-content-between">
+                <input type="text" class="form-control mInput" placeholder="Write your message">
+                <button class="btn"><svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 10L9.23232 1.7323C10.2045 0.755901 11.7955 0.7559 12.7677 1.7323L21 10" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
             </div>
           </div>
         </div>
       </div>
       <!-- order status end -->
     </div>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.max.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+ <!-- Bootstrap Bundle with Popper -->
+ <script
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"
+></script>
   </body>
 </html>

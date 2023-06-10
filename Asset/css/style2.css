@@ -33,7 +33,7 @@
     background: #fff5f5;
     border-radius: 20px 20px 0px 0px;
   }
-  .f3 {
+  .fp3 {
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -89,3 +89,60 @@
     max-height: 800px;
     overflow: auto;
   }
+  /* track Order css */
+  .ft1 {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 139.02%;
+    /* or 33px */
+
+    color: #000000;
+  }
+  .tripBox {
+    background: #fff5f5;
+    border-radius: 10px;
+  }
+  /* .route {
+    position: relative;
+  }
+  .rImg {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+  } */
+  .rImg {
+    margin-left: -10px !important;
+    margin-top: 4px;
+  }
+  .pImage{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: 1px solid red;
+
+  }
+  .mInput{
+    background: #FFFFFF;
+border-radius: 130px;
+  }
+  .tImg{
+    width: 70%;
+  }
+  .lImg{
+    width: 70%;
+  }
+  @media only screen and (max-width: 768px){
+/*Big smartphones [426px -> 600px]*/
+.fSize{
+    font-size: 10px;
+}
+.lImg{
+    display: none;
+}
+.notification{
+    width: 100%!important;
+}
+}
